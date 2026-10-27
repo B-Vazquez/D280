@@ -11,7 +11,7 @@ export class MapApiService {
 
 
   getCountryInfo (countryId: string): Observable<any> {
-    const url = `http://api.worldbank.org/v2/country/${countryId}?format=json`;
+    const url = `https://api.worldbank.org/v2/country/${countryId}?format=json`;
     return this.http.get(url);
   }
 }
